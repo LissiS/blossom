@@ -1,5 +1,5 @@
 /*
-Theme Name:         Blossom
+Theme Name:         Blossom by Lissi
 Theme URI:          http://github.com/LissiS/Blossom
 Description:        Theme based on Sapling
 Version:            1.0.0
@@ -10,3 +10,197 @@ Template:			sapling
 License:            The Unlicense
 License URI:        http://unlicense.org/
 */
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon-menu, .icon-twitter, .icon-github, .icon-feed {
+	font-family: 'icomoon';
+	color: #4e4e4e;
+	font-size: 30px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-menu {
+	display: block;
+	padding-top: 6px;
+}
+.icon-twitter, .icon-github, .icon-feed {
+	padding: 8px;
+}
+.icon-menu:before {
+	content: "\e000";
+}
+.icon-twitter:before {
+	content: "\e001";
+}
+.icon-github:before {
+	content: "\e002";
+}
+.icon-feed:before {
+	content: "\e003";
+}
+
+body {  
+    background-color:  #FBFBEF ; 
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    padding: 18px;
+}
+
+.clearfix:before,  
+.clearfix:after {  
+    content: " ";  
+    display: table;  
+}  
+.clearfix:after {  
+    clear: both;  
+}  
+.clearfix {  
+    *zoom: 1;  
+}
+
+a {
+	color: #EE14A8;
+}
+
+a.logo {
+	color: #333;
+	font-weight: 600;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.pink {
+	color: #EE14A8;
+}
+
+.nav-trigger {
+	float: right;
+}
+
+.header-menu {
+	display: none;
+}
+
+.header-menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.header-menu ul li a {
+	color: #333;
+	line-height: 36px;
+	border-bottom: 4px solid #333;
+	display: block;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.header-menu ul li.active a {
+	border-bottom: 4px solid #EE14A8;
+}
+
+@media all and (min-width: 480px) {
+
+  header.mainHead {
+    padding-bottom: 32px;
+  }
+  .nav-trigger {
+	display: none;
+  }
+
+  .header-menu {
+  	display: block;
+  	float: right;
+  	padding-top: 6px;
+  }
+
+  .header-menu ul li {
+    display: inline;
+    float: left;
+    list-style: none;
+  }
+
+  .header-menu ul li a {
+	border: none;
+	margin-left: 16px;
+  }
+}
+
+h2 a {
+	font-weight: 700;
+	font-size: 24px;
+	text-decoration: none;
+	color: #333;
+}
+
+.mainSidebar {
+	border-top: 2px solid #8e8d8d;
+	border-bottom: 2px solid #8e8d8d;
+	text-align: center;
+}
+
+.mainSidebar ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.mainSidebar ul li a {
+	color: #333;
+	text-decoration: none;
+}
+
+h3 {
+	margin: 0;
+}
+
+@media all and (min-width: 480px) {
+
+	#main {
+		float: left;
+		width: 70%;
+	}
+
+	.mainSidebar {
+		padding-top: 16px;
+		width: 25%;
+		border: none;
+		text-align: left;
+		float: right;
+	}
+
+}
+
+.social, .copyright {
+	text-align: center;
+}
+
+.social {
+	margin: 16px;
+}
+
+.social a {
+	text-decoration: none;
+}
+
+.copyright {
+	font-size: 12px;
+	color: #4e4e4e;
+}
